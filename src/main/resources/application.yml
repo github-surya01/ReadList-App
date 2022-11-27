@@ -6,3 +6,27 @@ spring:
           github:
             client-id: <clientID>
             client-secret: <clientSecret>
+  data:
+    cassandra:
+      keyspace-name: main
+      username: HtiaDpNkmRkokUbEhUZkoPiM
+      password: CHxOTDvu-akc.cRm+-yb.JiuOZJZ8Iq7-.lnz1_A1YP,vltSEKElsXW8kJPJ-cLPcfAH3LHK_DOuN-UjyP2tW6ZZCb.q8o.Pogszvpgh7_85kCZpvAflrIEW3u4aABAc
+      schema-action: CREATE_IF_NOT_EXISTS
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+  application:
+    name: readlist
+
+datastax.astra:
+  secure-connect-bundle: secure-connect.zip
+
+astra.db:
+  id: 2000250c-04dd-49a3-bdf9-7592cdbea577-1
+  region: asia-south1
+  keyspace: main
+  application.token: AstraCS:HtiaDpNkmRkokUbEhUZkoPiM:59f797dc41a65ae7e4514160140b20b4650ba9b0df9a14aa21355aa8c70c3b8d
+
+
