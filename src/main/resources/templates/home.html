@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Demo</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width" />
+    <base href="/" />
+  </head>
+  <body>
+    <h1>ReadList</h1>
+
+    <h1>My Books</h1>
+
+  <div th:each="book : ${books}">
+    <div class="card mb-3" style="max-width: 540px;">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img src="..." class="img-fluid rounded-start" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <a th:href="@{'/books/' + ${book.bookId}}" class="card-title" th:text="${book.bookName}">Name</a>
+            <p class="card-text" th:text="${book.authorName}">Author Name</p>
+            <div th:switch="${book.readingStatus}">
+            <p class="card-text" th:case="'0-reading'">Currently Reading</p>
+              <p class="card-text" th:case="'1-finished'">Finished</p>
+              <p class="card-text" th:case="'2-dnf'">Did Not Finish</p>
+          </div>
+            <p class="card-text">
+              <span th:each="rating: ${#numbers.sequence(0,books.rating-1)}">
+                &#9733;
+              </span>
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div> Hi there </div>
+  </body>
+</html>
