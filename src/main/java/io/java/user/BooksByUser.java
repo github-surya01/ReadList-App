@@ -50,7 +50,6 @@ public class BooksByUser {
     private List<String> coverIds;
 
 
-
     @Column("rating")
     @CassandraType(type = Name.INT)
     private int rating;
