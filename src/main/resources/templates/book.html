@@ -21,7 +21,7 @@
 <div class="container">
      <nav class="navbar navbar-expand-lg navbar-light bg-light"  style="padding-bottom: 20px">
       <div class="container-fluid">
-        <a class="navbar-brand" href="/">Better Reads</a>
+        <a class="navbar-brand" href="/">Read List</a>
       </div>
     </nav>
 
@@ -43,9 +43,12 @@
                         <p class="card-text">Published Date: <small class="text-muted" th:text="${book.publishedDate}">2020-01-01</small></p>
 
 
-                        <div th:unless="${loginId}"class="d-grid gap-2 d-sm-flex justify-content-sm-center space-bottom">
-                            <p class="card-text">Login to track this BOOK</p>
-                            <a type="button" href="/oauth2/authorization/github" class="btn btn-primary btn-lg px-4 gap-3">Login via GitHub</a>
+                        <div class="card" th:unless="${loginId}" >
+                            <div class="card-body">
+                                <h5 class="card-title">Login to track this book</h5>
+                                <p class="card-text">Mark reading dates, completion status and star ratings</p>
+                                <a href="/oauth2/authorization/github" class="btn btn-primary">Login via GitHub</a>
+                            </div>
                         </div>
 
                         <form th:if="${loginId}" th:attr="action=@{/addUserBook}" method="POST">
