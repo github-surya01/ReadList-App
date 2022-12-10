@@ -1,6 +1,6 @@
-package io.java;
+package io.readlist;
 
-import io.java.connection.DataStaxAstraProperties;
+import io.readlist.connection.DataStaxAstraProperties;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.cassandra.CqlSessionBuilderCustomizer;

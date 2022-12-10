@@ -1,4 +1,4 @@
-package io.java.readList;
+package io.readlist.readList;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;

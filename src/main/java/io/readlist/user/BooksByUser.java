@@ -1,4 +1,4 @@
-package io.java.user;
+package io.readlist.user;
 
 import java.util.List;
 import java.util.UUID;
