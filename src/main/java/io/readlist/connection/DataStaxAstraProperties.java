@@ -1,4 +1,4 @@
-package io.java.connection;
+package io.readlist.connection;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

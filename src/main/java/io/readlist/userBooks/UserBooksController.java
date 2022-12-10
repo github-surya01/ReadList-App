@@ -1,12 +1,12 @@
-package io.java.userBooks;
+package io.readlist.userBooks;
 
 import java.time.LocalDate;
 import java.util.Optional;
 
-import io.java.book.Book;
-import io.java.book.BookRepository;
-import io.java.user.BooksByUser;
-import io.java.user.BooksByUserRepository;
+import io.readlist.book.Book;
+import io.readlist.book.BookRepository;
+import io.readlist.user.BooksByUser;
+import io.readlist.user.BooksByUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.core.user.OAuth2User;

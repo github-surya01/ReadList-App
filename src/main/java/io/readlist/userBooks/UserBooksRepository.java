@@ -1,4 +1,4 @@
-package io.java.userBooks;
+package io.readlist.userBooks;
 
 import org.springframework.data.cassandra.repository.CassandraRepository;
 

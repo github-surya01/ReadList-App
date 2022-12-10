@@ -1,6 +1,5 @@
-package io.java.search;
+package io.readlist.search;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class SearchResult {

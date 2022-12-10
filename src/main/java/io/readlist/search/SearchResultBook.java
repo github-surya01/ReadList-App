@@ -1,4 +1,4 @@
-package io.java.search;
+package io.readlist.search;
 
 import java.util.List;
 

@@ -1,8 +1,8 @@
-package io.java.book;
+package io.readlist.book;
 
-import io.java.userBooks.UserBooks;
-import io.java.userBooks.UserBooksPrimaryKey;
-import io.java.userBooks.UserBooksRepository;
+import io.readlist.userBooks.UserBooks;
+import io.readlist.userBooks.UserBooksPrimaryKey;
+import io.readlist.userBooks.UserBooksRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.core.user.OAuth2User;

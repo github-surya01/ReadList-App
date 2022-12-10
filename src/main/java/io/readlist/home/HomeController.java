@@ -1,8 +1,7 @@
-package io.java.home;
+package io.readlist.home;
 
-import io.java.user.BooksByUser;
-import io.java.user.BooksByUserRepository;
-import io.java.userBooks.UserBooksRepository;
+import io.readlist.user.BooksByUser;
+import io.readlist.user.BooksByUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.cassandra.core.query.CassandraPageRequest;
 import org.springframework.data.domain.Slice;
